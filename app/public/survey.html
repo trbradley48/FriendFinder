@@ -54,7 +54,7 @@
                 <h3 for="Q1">Question 1</h3>
                 <h5 for="Q1">Your mind is always buzzing with unexplored ideas and plans.</h5>
                 <select class="chosen-select" id="q0">
-                  <option value></option>
+                  <option value="0"></option>
                   <option value="1">1 (Strongly Disagree)</option>
                   <option value="2">2</option>
                   <option value="3">3</option>
@@ -65,7 +65,7 @@
                 <h3 for="Q1">Question 2</h3>
                 <h5 for="Q1">Generally speaking, you rely more on your experience than your imagination.</h5>
                 <select class="chosen-select" id="q1">
-                  <option value></option>
+                  <option value="0"></option>
                   <option value="1">1 (Strongly Disagree)</option>
                   <option value="2">2</option>
                   <option value="3">3</option>
@@ -76,7 +76,7 @@
                 <h3 for="Q1">Question 3</h3>
                 <h5 for="Q1">You find it easy to stay relaxed and focused even when there is some pressure.</h5>
                 <select class="chosen-select" id="q2">
-                  <option value></option>
+                  <option value="0"></option>
                   <option value="1">1 (Strongly Disagree)</option>
                   <option value="2">2</option>
                   <option value="3">3</option>
@@ -87,7 +87,7 @@
                 <h3 for="Q1">Question 4</h3>
                 <h5 for="Q1">You rarely do something just out of sheer curiosity.</h5>
                 <select class="chosen-select" id="q3">
-                  <option value></option>
+                  <option value="0"></option>
                   <option value="1">1 (Strongly Disagree)</option>
                   <option value="2">2</option>
                   <option value="3">3</option>
@@ -98,7 +98,7 @@
                 <h3 for="Q1">Question 5</h3>
                 <h5 for="Q1">People can rarely upset you.</h5>
                 <select class="chosen-select" id="q4">
-                  <option value></option>
+                  <option value="0"></option>
                   <option value="1">1 (Strongly Disagree)</option>
                   <option value="2">2</option>
                   <option value="3">3</option>
@@ -109,7 +109,7 @@
                 <h3 for="Q1">Question 6</h3>
                 <h5 for="Q1">It is often difficult for you to relate to other people’s feelings.</h5>
                 <select class="chosen-select" id="q5">
-                  <option value></option>
+                  <option value="0"></option>
                   <option value="1">1 (Strongly Disagree)</option>
                   <option value="2">2</option>
                   <option value="3">3</option>
@@ -120,7 +120,7 @@
                 <h3 for="Q1">Question 7</h3>
                 <h5 for="Q1">In a discussion, truth should be more important than people’s sensitivities.</h5>
                 <select class="chosen-select" id="q6">
-                  <option value></option>
+                  <option value="0"></option>
                   <option value="1">1 (Strongly Disagree)</option>
                   <option value="2">2</option>
                   <option value="3">3</option>
@@ -131,7 +131,7 @@
                 <h3 for="Q1">Question 8</h3>
                 <h5 for="Q1">You rarely get carried away by fantasies and ideas.</h5>
                 <select class="chosen-select" id="q7">
-                  <option value></option>
+                  <option value="0"></option>
                   <option value="1">1 (Strongly Disagree)</option>
                   <option value="2">2</option>
                   <option value="3">3</option>
@@ -140,9 +140,10 @@
                 </select>
 
                 <h3 for="Q1">Question 9</h3>
-                <h5 for="Q1">You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</h5>
+                <h5 for="Q1">You think that everyone’s views should be respected regardless of whether they are
+                  supported by facts or not.</h5>
                 <select class="chosen-select" id="q8">
-                  <option value></option>
+                  <option value="0"></option>
                   <option value="1">1 (Strongly Disagree)</option>
                   <option value="2">2</option>
                   <option value="3">3</option>
@@ -153,7 +154,7 @@
                 <h3 for="Q1">Question 10</h3>
                 <h5 for="Q1">You feel more energetic after spending time with a group of people.</h5>
                 <select class="chosen-select" id="q9">
-                  <option value></option>
+                  <option value="0"></option>
                   <option value="1">1 (Strongly Disagree)</option>
                   <option value="2">2</option>
                   <option value="3">3</option>
@@ -161,8 +162,9 @@
                   <option value="5">5 (Strongly Agree)</option>
                 </select>
                 <br>
+                <br>
 
-                <button type="submit" data-toggle="modal" data-target="#myModal" class="btn btn-primary submit" margin-top="5px">Submit</button>
+                <button type="submit" class="btn btn-primary submit">Submit</button>
             </form>
           </div>
         </div>
@@ -170,22 +172,26 @@
     </div>
 
     <!-- Modal for displaying new friend -->
-    <div class="modal fade" id="myModal">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 id="bfName"></h5>
-          </div>
-          <div class="modal-body">
-            <img src="" id="bfPhoto" width="468" height="353">
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          </div>
+    <div class="modal fade" id='myModal' tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true" >
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title" id="exampleModalLongTitle">Your Bestfriend is...</h1>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h2 id="match-name">N/A</h2>
+                    <img id="match-img" src="none" alt="best friend's photo">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-
 
 
     <footer class="footer">
@@ -203,57 +209,54 @@
 
 <!-- BELOW CODE IS CRITICAL. IT HANDLES HOW FORM DATA IS SENT TO OUR SERVER -->
 <script type="text/javascript">
-  // In this code below we create the Front-end JavaScript which "POSTS" our form data to our express server.
-  // In essence, when the user hits submit, jQuery grabs all of the fields then sends a post request to our api
-  // Our api recognizes the route (/api/tables)... and then runs the associated code (found in api-routes.js).
-  // In this case the associated code "saves" the data to the table-data.js file or waitinglist-data.js file
 
   $(".submit").on("click", function (event) {
     event.preventDefault();
+    var isValid = true;
 
-    if(q0 === undefined) {
-      console.log("empty answer");
-    }
-    var newFriendScores = [];
+    // Validation check
     for (var i = 0; i < 10; i++) {
-      newFriendScores[i] = $("#q" + i).val()
+      if (($("#q" + i).val() === "0") || ($("#name").val() === "") || ($("#photo").val() === "")) {
+        console.log("empty answer");
+        isValid = false;
+      }
     }
 
-    // Here we grab the form elements
-    var newFriend = {
-      name: $("#name").val().trim(),
-      photo: $("#photo").val().trim(),
-      scores: newFriendScores
-    };
+    // If valid - populate user's score
+    if (isValid) {
+      var newFriendScores = [];
+      for (var i = 0; i < 10; i++) {
+        newFriendScores[i] = $("#q" + i).val()
+      }
 
+      // Here we grab the form elements
+      var newFriend = {
+        name: $("#name").val().trim(),
+        photo: $("#photo").val().trim(),
+        scores: newFriendScores
+      };
 
-    // This line is the magic. It"s very similar to the standard ajax function we used.
-    // Essentially we give it a URL, we give it the object we want to send, then we have a "callback".
-    // The callback is the response of the server. In our case, we set up code in api-routes that "returns" true or false
-    // depending on if a tables is available or not.
+      $.post("/api/friends", newFriend,
+        function (data) {
 
-    $.post("/api/friends", newFriend,
-      function (data) {
+          // Update new friend info and display modal
+          if (newFriend) {
+            $("#bfName").text(data.name);
+            $("#bfPhoto").attr('src', data.photo);
+            $('#myModal').modal('toggle');
+          }
 
-        // Update new friend info and display modal
-        if (newFriend) {
-          $("#bfName").text(data.name)
-          $("#bfPhoto").attr('src', data.photo)
-          $("#mymodal").attr('data-toggle', 'modal');
-        }
-
-        // If required fields aren't filled in display alert
-        else {
-          alert("Please fill out all information.");
-        }
-
-        // Clear the form when submitting
-        $("#name").val("");
-        $("#photo").val("");
-        for (var i = 0; i < 10; i++) {
-          $("#q" + i).val('');
-        }
-      })
+          // Clear the form when submitting
+          $("#name").val("");
+          $("#photo").val("");
+          for (var i = 0; i < 10; i++) {
+            $("#q" + i).val("0");
+          }
+        })
+    }
+    else {
+      alert("Please fill out all information.");
+    }
   });
 
 </script>
