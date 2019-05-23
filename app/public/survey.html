@@ -3,13 +3,15 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Reservation Page</title>
+  <title>Survey Page</title>
 
   <!-- Latest compiled and minified CSS & JS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
 
 </head>
 
@@ -19,15 +21,11 @@
 
     <div class="jumbotron">
       <h1 class="text-center">
-        <span class="fa fa-fire"></span> Hot Restaurant</h1>
+        <span class="fa fa-fire"></span> Survey</h1>
       <hr>
-      <h2 class="text-center">Make your reservation</h2>
+      <h2 class="text-center">Fill out the questions below</h2>
       <br>
       <div class="text-center">
-        <a href="/tables">
-          <button class="btn btn-lg btn-primary">
-            <span class="fa fa-list-alt"></span> View Tables</button>
-        </a>
         <a href="/">
           <button class="btn btn-lg btn-default">
             <span class="fa fa-home"></span>
@@ -37,42 +35,163 @@
     </div>
     <div class="row">
       <div class="col-lg-12">
-        <!-- Reservation Page -->
+        <!-- Survey Page -->
         <div class="card">
           <div class="card-header">
-            Table Reservation
+            Questions
           </div>
           <div class="card-body">
             <form role="form">
               <div class="form-group">
-                <label for="reserve-name">Name</label>
-                <input type="text" class="form-control" id="reserve-name">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name">
               </div>
               <div class="form-group">
-                <label for="reserve-phone">Phone Number</label>
-                <input type="text" class="form-control" id="reserve-phone">
+                <label for="photo">Photo</label>
+                <input type="text" class="form-control" id="photo">
               </div>
               <div class="form-group">
-                <label for="reserve-email">Email</label>
-                <input type="text" class="form-control" id="reserve-email">
-              </div>
-              <div class="form-group">
-                <label for="reserve-unique-id">Unique ID</label>
-                <input type="text" class="form-control" id="reserve-unique-id">
-              </div>
-              <button type="submit" class="btn btn-primary submit">Submit</button>
+                <h3 for="Q1">Question 1</h3>
+                <h5 for="Q1">Your mind is always buzzing with unexplored ideas and plans.</h5>
+                <select class="chosen-select" id="q0">
+                  <option value></option>
+                  <option value="1">1 (Strongly Disagree)</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5 (Strongly Agree)</option>
+                </select>
+
+                <h3 for="Q1">Question 2</h3>
+                <h5 for="Q1">Generally speaking, you rely more on your experience than your imagination.</h5>
+                <select class="chosen-select" id="q1">
+                  <option value></option>
+                  <option value="1">1 (Strongly Disagree)</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5 (Strongly Agree)</option>
+                </select>
+
+                <h3 for="Q1">Question 3</h3>
+                <h5 for="Q1">You find it easy to stay relaxed and focused even when there is some pressure.</h5>
+                <select class="chosen-select" id="q2">
+                  <option value></option>
+                  <option value="1">1 (Strongly Disagree)</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5 (Strongly Agree)</option>
+                </select>
+
+                <h3 for="Q1">Question 4</h3>
+                <h5 for="Q1">You rarely do something just out of sheer curiosity.</h5>
+                <select class="chosen-select" id="q3">
+                  <option value></option>
+                  <option value="1">1 (Strongly Disagree)</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5 (Strongly Agree)</option>
+                </select>
+
+                <h3 for="Q1">Question 5</h3>
+                <h5 for="Q1">People can rarely upset you.</h5>
+                <select class="chosen-select" id="q4">
+                  <option value></option>
+                  <option value="1">1 (Strongly Disagree)</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5 (Strongly Agree)</option>
+                </select>
+
+                <h3 for="Q1">Question 6</h3>
+                <h5 for="Q1">It is often difficult for you to relate to other people’s feelings.</h5>
+                <select class="chosen-select" id="q5">
+                  <option value></option>
+                  <option value="1">1 (Strongly Disagree)</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5 (Strongly Agree)</option>
+                </select>
+
+                <h3 for="Q1">Question 7</h3>
+                <h5 for="Q1">In a discussion, truth should be more important than people’s sensitivities.</h5>
+                <select class="chosen-select" id="q6">
+                  <option value></option>
+                  <option value="1">1 (Strongly Disagree)</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5 (Strongly Agree)</option>
+                </select>
+
+                <h3 for="Q1">Question 8</h3>
+                <h5 for="Q1">You rarely get carried away by fantasies and ideas.</h5>
+                <select class="chosen-select" id="q7">
+                  <option value></option>
+                  <option value="1">1 (Strongly Disagree)</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5 (Strongly Agree)</option>
+                </select>
+
+                <h3 for="Q1">Question 9</h3>
+                <h5 for="Q1">You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</h5>
+                <select class="chosen-select" id="q8">
+                  <option value></option>
+                  <option value="1">1 (Strongly Disagree)</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5 (Strongly Agree)</option>
+                </select>
+
+                <h3 for="Q1">Question 10</h3>
+                <h5 for="Q1">You feel more energetic after spending time with a group of people.</h5>
+                <select class="chosen-select" id="q9">
+                  <option value></option>
+                  <option value="1">1 (Strongly Disagree)</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5 (Strongly Agree)</option>
+                </select>
+                <br>
+
+                <button type="submit" data-toggle="modal" data-target="#myModal" class="btn btn-primary submit" margin-top="5px">Submit</button>
             </form>
           </div>
         </div>
       </div>
     </div>
 
+    <!-- Modal for displaying new friend -->
+    <div class="modal fade" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 id="bfName"></h5>
+          </div>
+          <div class="modal-body">
+            <img src="" id="bfPhoto" width="468" height="353">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
 
     <footer class="footer">
       <div class="container">
         <p>
-          <a href="/api/tables">API Table Link</a> |
-          <a href="/api/waitlist">API Wait List</a>
+          <a href="/api/friends">API Friends List Link</a>
       </div>
     </footer>
 
@@ -89,45 +208,52 @@
   // Our api recognizes the route (/api/tables)... and then runs the associated code (found in api-routes.js).
   // In this case the associated code "saves" the data to the table-data.js file or waitinglist-data.js file
 
-  $(".submit").on("click", function(event) {
+  $(".submit").on("click", function (event) {
     event.preventDefault();
 
+    if(q0 === undefined) {
+      console.log("empty answer");
+    }
+    var newFriendScores = [];
+    for (var i = 0; i < 10; i++) {
+      newFriendScores[i] = $("#q" + i).val()
+    }
+
     // Here we grab the form elements
-    var newReservation = {
-      customerName: $("#reserve-name").val().trim(),
-      phoneNumber: $("#reserve-phone").val().trim(),
-      customerEmail: $("#reserve-email").val().trim(),
-      customerID: $("#reserve-unique-id").val().trim()
+    var newFriend = {
+      name: $("#name").val().trim(),
+      photo: $("#photo").val().trim(),
+      scores: newFriendScores
     };
 
-    console.log(newReservation);
 
     // This line is the magic. It"s very similar to the standard ajax function we used.
     // Essentially we give it a URL, we give it the object we want to send, then we have a "callback".
     // The callback is the response of the server. In our case, we set up code in api-routes that "returns" true or false
     // depending on if a tables is available or not.
 
-    $.post("/api/tables", newReservation,
-      function(data) {
+    $.post("/api/friends", newFriend,
+      function (data) {
 
-        // If a table is available... tell user they are booked.
-        if (data) {
-          alert("Yay! You are officially booked!");
+        // Update new friend info and display modal
+        if (newFriend) {
+          $("#bfName").text(data.name)
+          $("#bfPhoto").attr('src', data.photo)
+          $("#mymodal").attr('data-toggle', 'modal');
         }
 
-        // If a table is available... tell user they on the waiting list.
+        // If required fields aren't filled in display alert
         else {
-          alert("Sorry you are on the wait list");
+          alert("Please fill out all information.");
         }
 
         // Clear the form when submitting
-        $("#reserve-name").val("");
-        $("#reserve-phone").val("");
-        $("#reserve-email").val("");
-        $("#reserve-unique-id").val("");
-
-      });
-
+        $("#name").val("");
+        $("#photo").val("");
+        for (var i = 0; i < 10; i++) {
+          $("#q" + i).val('');
+        }
+      })
   });
 
 </script>
